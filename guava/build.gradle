@@ -1,0 +1,8 @@
+dependencies {
+	compile group: 'com.google.guava', name: 'guava', version: '19.0'
+}
+
+task runApp(type: JavaExec) {
+	main = 'PartitionedListWithoutDuplication'
+	classpath = sourceSets.main.runtimeClasspath
+}
